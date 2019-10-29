@@ -16,5 +16,23 @@ namespace GeradorChaveDeAcesso
         {
             InitializeComponent();
         }
+
+        private void BtnGerarChave_Click(object sender, EventArgs e)
+        {
+            string est, ano, mes, cnp, mod, ser, num, chav;
+            int ran;
+            Random rdn = new Random();
+
+            est = cmbEstado.Text;
+            ano = dtpAno.Text;
+            mes = dtpMes.Text;
+            cnp = mtbCNPJ.Text;
+            mod = cbModelo.Text;
+            ser = txtserie.Text;
+            num = txtNum.Text;
+            ran = rdn.Next(111111111, 999999999);
+
+
+        }
     }
 }
