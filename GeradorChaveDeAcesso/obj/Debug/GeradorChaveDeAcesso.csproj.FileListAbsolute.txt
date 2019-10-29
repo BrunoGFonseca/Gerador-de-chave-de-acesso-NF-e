@@ -1,0 +1,10 @@
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe.config
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.pdb
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csprojAssemblyReference.cache
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Form1.resources
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Properties.Resources.resources
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.GenerateResource.cache
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.CoreCompileInputs.cache
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.exe
+C:\Users\bruno.fonseca\Desktop\Nova pasta\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.pdb
