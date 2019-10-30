@@ -12,7 +12,6 @@ C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAce
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.pdb
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csprojAssemblyReference.cache
-C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Form1.resources
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Properties.Resources.resources
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.GenerateResource.cache
 C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.CoreCompileInputs.cache
@@ -36,3 +35,4 @@ D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorCh
 D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.GenerateResource.cache
 D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.exe
 D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.pdb
+C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.GeradorChaveDeAcesso.resources

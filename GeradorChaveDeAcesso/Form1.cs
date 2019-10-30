@@ -199,29 +199,134 @@ namespace GeradorChaveDeAcesso
             return chave + digitoRetorno.ToString();
         }
 
+        public bool validaComboBox(string Est, string Mod)
+        {
+            if ((Est.Equals("0")) || (Mod.Equals(" ")))
+            {
+                /*
+                if (Est.Equals("0"))
+                {
+                    MessageBox.Show("Selecione um estado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Selecione um modelo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                */
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public bool validaCnpj(string cnpj)
+        {
+            int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int[] multiplicador2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+
+            if (cnpj.Length != 14)
+                return false;
+
+            string tempCnpj = cnpj.Substring(0, 12);
+            int soma = 0;
+
+            for (int i = 0; i < 12; i++)
+                soma += int.Parse(tempCnpj[i].ToString()) * multiplicador1[i];
+
+            int resto = (soma % 11);
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+
+            string digito = resto.ToString();
+            tempCnpj = tempCnpj + digito;
+            soma = 0;
+            for (int i = 0; i < 13; i++)
+                soma += int.Parse(tempCnpj[i].ToString()) * multiplicador2[i];
+
+            resto = (soma % 11);
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+
+            digito = digito + resto.ToString();
+
+            return cnpj.EndsWith(digito);
+        }
+
+        public bool isVazio(string est, string mod, string ano, string mes, string cnp, string ser, string num)
+        {
+            if (est.Equals(""))
+                return true;
+            else if (mod.Equals(""))
+                return true;
+            else if (ano.Equals(""))
+                return true;
+            else if (mes.Equals(""))
+                return true;
+            else if (cnp.Equals(""))
+                return true;
+            else if (ser.Equals(""))
+                return true;
+            else if (num.Equals(""))
+                return true;
+            else
+                return false;
+        }
+
         private void BtnGerarChave_Click(object sender, EventArgs e)
         {
             string est, ano, mes, cnp, mod, ser, num, ranTxt, chave, aux;
             Regex regexObj = new Regex(@"[^\d]");
             Random rdn = new Random();
             int ranInt;
+            bool cnpj, vazio, valid;
 
+            //Pegando os valores da tela
             est = validaEstado(cmbEstado.Text);
+            mod = cmbModelo.Text;
             ano = dtpAno.Text;
             mes = dtpMes.Text;
-            cnp= regexObj.Replace(mtbCNPJ.Text, "");
-            mod = cmbModelo.Text;
+            cnp = regexObj.Replace(mtbCNPJ.Text, "");
             ser = txtserie.Text;
             num = txtNum.Text;
             ranInt = rdn.Next(000000000, 999999999);
-
             ranTxt = ranInt.ToString();
 
-            aux = est + ano + mes + cnp + mod + ser + num + ranTxt;
+            //Efetuando validações
+            vazio = isVazio(est, mod, ano, mes, cnp, ser, num);
+            valid = validaComboBox(est, mod);
+            cnpj = validaCnpj(cnp);
 
-            chave = digito(aux);
+            if (!vazio)
+            {
+                if (valid)
+                {
+                    if (cnpj)
+                    {
+                        aux = est + ano + mes + cnp + mod + ser + num + ranTxt;
+                        chave = digito(aux);
 
-            txtChaveAcesso.Text = chave;
+                        txtChaveAcesso.Text = chave;
+                    }
+                    else
+                    {
+                        MessageBox.Show("CNPJ inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Estado ou Modelo está vazio","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Existem campos vazios", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnLimp_Click(object sender, EventArgs e)
@@ -234,6 +339,39 @@ namespace GeradorChaveDeAcesso
             txtserie.Text = "";
             txtNum.Text = "";
             txtChaveAcesso.Text = "";
+        }
+
+        private void TxtNum_Leave(object sender, EventArgs e)
+        {
+            string num = txtNum.Text;
+
+            if(num.Length < 9)
+            {
+                MessageBox.Show("Campo número está com menos de 9 digitos","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void Txtserie_Leave(object sender, EventArgs e)
+        {
+            string serie = txtserie.Text;
+
+            if (serie.Length < 3)
+            {
+                MessageBox.Show("Campo série está com menos de 3 digitos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnInfo_Click(object sender, EventArgs e)
+        {
+            string mensagem;
+
+            mensagem = "Estado: Informe código IBGE do estado do fornecedor\n\n" +
+                        "Ano: informe ano com 2 digitos\n\n" + "Mês: informe mês com 2 digitos\n\n" +
+                        "CNPJ: Informe o CNPJ\n\n" + "Modelo: Informe o modelo\n\n" + "Série: Informe a série com 3 digitos\n\n" +
+                        "Número: Informe um numero maior do que a última nota do fornecedor no sistema 9 digitos";
+
+            MessageBox.Show("As informações dos campos são: \n\n" + mensagem,"Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
         }
     }
 }

@@ -47,12 +47,13 @@
             this.txtChaveAcesso = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnLimp = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(3, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
@@ -61,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 9);
+            this.label2.Location = new System.Drawing.Point(129, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 1;
@@ -70,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 9);
+            this.label3.Location = new System.Drawing.Point(246, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 2;
@@ -88,7 +89,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(228, 43);
+            this.label5.Location = new System.Drawing.Point(231, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 4;
@@ -97,7 +98,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 73);
+            this.label6.Location = new System.Drawing.Point(3, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 5;
@@ -106,7 +107,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(157, 69);
+            this.label9.Location = new System.Drawing.Point(157, 73);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 8;
@@ -118,7 +119,7 @@
             this.cmbEstado.Location = new System.Drawing.Point(49, 6);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(60, 21);
-            this.cmbEstado.TabIndex = 9;
+            this.cmbEstado.TabIndex = 0;
             // 
             // dtpAno
             // 
@@ -129,17 +130,17 @@
             this.dtpAno.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpAno.Name = "dtpAno";
             this.dtpAno.Size = new System.Drawing.Size(60, 20);
-            this.dtpAno.TabIndex = 10;
+            this.dtpAno.TabIndex = 1;
             this.dtpAno.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // dtpMes
             // 
             this.dtpMes.CustomFormat = "MM";
             this.dtpMes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMes.Location = new System.Drawing.Point(279, 3);
+            this.dtpMes.Location = new System.Drawing.Point(279, 7);
             this.dtpMes.Name = "dtpMes";
             this.dtpMes.Size = new System.Drawing.Size(52, 20);
-            this.dtpMes.TabIndex = 11;
+            this.dtpMes.TabIndex = 2;
             // 
             // mtbCNPJ
             // 
@@ -147,46 +148,50 @@
             this.mtbCNPJ.Mask = "00.000.000/0000-00";
             this.mtbCNPJ.Name = "mtbCNPJ";
             this.mtbCNPJ.Size = new System.Drawing.Size(124, 20);
-            this.mtbCNPJ.TabIndex = 12;
+            this.mtbCNPJ.TabIndex = 3;
             // 
             // cmbModelo
             // 
             this.cmbModelo.FormattingEnabled = true;
-            this.cmbModelo.Location = new System.Drawing.Point(279, 35);
+            this.cmbModelo.Location = new System.Drawing.Point(279, 36);
             this.cmbModelo.Name = "cmbModelo";
             this.cmbModelo.Size = new System.Drawing.Size(52, 21);
-            this.cmbModelo.TabIndex = 13;
+            this.cmbModelo.TabIndex = 4;
             // 
             // txtserie
             // 
             this.txtserie.Location = new System.Drawing.Point(49, 66);
+            this.txtserie.MaxLength = 3;
             this.txtserie.Name = "txtserie";
             this.txtserie.Size = new System.Drawing.Size(74, 20);
-            this.txtserie.TabIndex = 14;
+            this.txtserie.TabIndex = 5;
+            this.txtserie.Leave += new System.EventHandler(this.Txtserie_Leave);
             // 
             // btnGerarChave
             // 
             this.btnGerarChave.Location = new System.Drawing.Point(12, 104);
             this.btnGerarChave.Name = "btnGerarChave";
-            this.btnGerarChave.Size = new System.Drawing.Size(132, 23);
-            this.btnGerarChave.TabIndex = 15;
+            this.btnGerarChave.Size = new System.Drawing.Size(97, 23);
+            this.btnGerarChave.TabIndex = 7;
             this.btnGerarChave.Text = "Gerar Chave";
             this.btnGerarChave.UseVisualStyleBackColor = true;
             this.btnGerarChave.Click += new System.EventHandler(this.BtnGerarChave_Click);
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(207, 62);
+            this.txtNum.Location = new System.Drawing.Point(207, 66);
+            this.txtNum.MaxLength = 9;
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(124, 20);
-            this.txtNum.TabIndex = 16;
+            this.txtNum.TabIndex = 6;
+            this.txtNum.Leave += new System.EventHandler(this.TxtNum_Leave);
             // 
             // txtChaveAcesso
             // 
             this.txtChaveAcesso.Location = new System.Drawing.Point(12, 157);
             this.txtChaveAcesso.Name = "txtChaveAcesso";
             this.txtChaveAcesso.Size = new System.Drawing.Size(319, 20);
-            this.txtChaveAcesso.TabIndex = 17;
+            this.txtChaveAcesso.TabIndex = 10;
             // 
             // label7
             // 
@@ -199,19 +204,30 @@
             // 
             // btnLimp
             // 
-            this.btnLimp.Location = new System.Drawing.Point(199, 104);
+            this.btnLimp.Location = new System.Drawing.Point(122, 104);
             this.btnLimp.Name = "btnLimp";
-            this.btnLimp.Size = new System.Drawing.Size(132, 23);
-            this.btnLimp.TabIndex = 19;
+            this.btnLimp.Size = new System.Drawing.Size(97, 23);
+            this.btnLimp.TabIndex = 8;
             this.btnLimp.Text = "Limpar";
             this.btnLimp.UseVisualStyleBackColor = true;
             this.btnLimp.Click += new System.EventHandler(this.btnLimp_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Location = new System.Drawing.Point(234, 104);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(97, 23);
+            this.btnInfo.TabIndex = 9;
+            this.btnInfo.Text = "Informações";
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.BtnInfo_Click);
             // 
             // GeradorChaveDeAcesso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 183);
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnLimp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtChaveAcesso);
@@ -260,6 +276,7 @@
         private System.Windows.Forms.TextBox txtChaveAcesso;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnLimp;
+        private System.Windows.Forms.Button btnInfo;
     }
 }
 
