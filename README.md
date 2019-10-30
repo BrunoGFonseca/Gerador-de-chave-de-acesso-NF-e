@@ -13,4 +13,4 @@ https://www.geradorcnpj.com/algoritmo_do_cnpj.htm
 http://www.macoratti.net/alg_cnpj.htm
 
 
-O instalador está disponibilizado no repositório GIT.
+O instalador está disponibilizado no repositório GIT para aqueles que quiserem testar a aplicação.
