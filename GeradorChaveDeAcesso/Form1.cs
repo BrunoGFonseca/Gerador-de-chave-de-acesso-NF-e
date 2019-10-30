@@ -222,8 +222,18 @@ namespace GeradorChaveDeAcesso
             chave = digito(aux);
 
             txtChaveAcesso.Text = chave;
+        }
 
-
+        private void btnLimp_Click(object sender, EventArgs e)
+        {
+            cmbEstado.Text = "";
+            dtpAno.Text = "";
+            dtpMes.Text = "";
+            mtbCNPJ.Text = "";
+            cmbModelo.Text = "";
+            txtserie.Text = "";
+            txtNum.Text = "";
+            txtChaveAcesso.Text = "";
         }
     }
 }

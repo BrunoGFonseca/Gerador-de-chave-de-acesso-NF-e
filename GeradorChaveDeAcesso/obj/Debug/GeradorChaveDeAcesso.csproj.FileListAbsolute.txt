@@ -27,3 +27,12 @@ C:\Users\2840481621006\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAce
 C:\Users\2840481621006\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Properties.Resources.resources
 C:\Users\2840481621006\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.GenerateResource.Cache
 C:\Users\2840481621006\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.GeradorChaveDeAcesso.resources
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe.config
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.pdb
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csprojAssemblyReference.cache
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.GeradorChaveDeAcesso.resources
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.Properties.Resources.resources
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.csproj.GenerateResource.cache
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.exe
+D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\obj\Debug\GeradorChaveDeAcesso.pdb

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeradorChaveDeAcesso));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@
             this.btnGerarChave = new System.Windows.Forms.Button();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtChaveAcesso = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnLimp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -163,9 +166,9 @@
             // 
             // btnGerarChave
             // 
-            this.btnGerarChave.Location = new System.Drawing.Point(132, 173);
+            this.btnGerarChave.Location = new System.Drawing.Point(12, 115);
             this.btnGerarChave.Name = "btnGerarChave";
-            this.btnGerarChave.Size = new System.Drawing.Size(75, 23);
+            this.btnGerarChave.Size = new System.Drawing.Size(132, 23);
             this.btnGerarChave.TabIndex = 15;
             this.btnGerarChave.Text = "Gerar Chave";
             this.btnGerarChave.UseVisualStyleBackColor = true;
@@ -180,16 +183,37 @@
             // 
             // txtChaveAcesso
             // 
-            this.txtChaveAcesso.Location = new System.Drawing.Point(9, 135);
+            this.txtChaveAcesso.Location = new System.Drawing.Point(12, 168);
             this.txtChaveAcesso.Name = "txtChaveAcesso";
-            this.txtChaveAcesso.Size = new System.Drawing.Size(289, 20);
+            this.txtChaveAcesso.Size = new System.Drawing.Size(286, 20);
             this.txtChaveAcesso.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(115, 152);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Chave de acesso";
+            // 
+            // btnLimp
+            // 
+            this.btnLimp.Location = new System.Drawing.Point(166, 115);
+            this.btnLimp.Name = "btnLimp";
+            this.btnLimp.Size = new System.Drawing.Size(132, 23);
+            this.btnLimp.TabIndex = 19;
+            this.btnLimp.Text = "Limpar";
+            this.btnLimp.UseVisualStyleBackColor = true;
+            this.btnLimp.Click += new System.EventHandler(this.btnLimp_Click);
             // 
             // GeradorChaveDeAcesso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 224);
+            this.ClientSize = new System.Drawing.Size(310, 196);
+            this.Controls.Add(this.btnLimp);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtChaveAcesso);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.btnGerarChave);
@@ -206,7 +230,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GeradorChaveDeAcesso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerador de chave de acesso NF-e";
             this.Load += new System.EventHandler(this.GeradorChaveDeAcesso_Load);
             this.ResumeLayout(false);
@@ -232,6 +258,8 @@
         private System.Windows.Forms.Button btnGerarChave;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.TextBox txtChaveAcesso;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnLimp;
     }
 }
 
