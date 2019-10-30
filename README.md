@@ -1,5 +1,5 @@
-# Gerador-de-chave-de-acesso-NF-e
-Este repositório contém um gerador de chaves de acesso para NF-e, para ser usado para testes em ambientes de homologação.
+# Gerador-de-chave-de-acesso-NF-E
+Este repositório contém um gerador de chaves de acesso para NF-e, para ser usado para testes em ambientes de homologação de pequenas, médias e grandes empresas. Ideal para testes de aplicações que trabalhem com NF-e.
 
 Para validação de chave de acesso da NF-e, consultei o portal do SEFAZ:                                                              
 http://www.nfe.fazenda.gov.br/portal/consulta.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=
@@ -14,3 +14,8 @@ http://www.macoratti.net/alg_cnpj.htm
 
 
 O instalador está disponibilizado no repositório GIT para aqueles que quiserem testar a aplicação.
+
+O Projeto ainda está em andamento. Devido a isso atualizações constantes irão acontecendo.
+Caso queira falar comigo sobre a aplicação, entre em contato comigo atráves do meu LinkedIn.
+
+https://www.linkedin.com/in/brunogfonseca/
