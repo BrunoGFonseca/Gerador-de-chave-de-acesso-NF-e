@@ -368,7 +368,8 @@ namespace GeradorChaveDeAcesso
             mensagem = "Estado: Informe código IBGE do estado do fornecedor\n\n" +
                         "Ano: informe ano com 2 digitos\n\n" + "Mês: informe mês com 2 digitos\n\n" +
                         "CNPJ: Informe o CNPJ\n\n" + "Modelo: Informe o modelo\n\n" + "Série: Informe a série com 3 digitos\n\n" +
-                        "Número: Informe um numero maior do que a última nota do fornecedor no sistema 9 digitos";
+                        "Número: Informe um numero maior do que a última nota do fornecedor no sistema 9 digitos\n\n" +
+                        "Desenvolvido por Bruno Fonseca\n"+ "Bruno.Fonseca@pentare.com.br\n\n" +"teste " + "teste";
 
             MessageBox.Show("As informações dos campos são: \n\n" + mensagem,"Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
