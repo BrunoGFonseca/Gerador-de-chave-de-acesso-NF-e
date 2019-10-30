@@ -1,6 +1,6 @@
 ﻿namespace GeradorChaveDeAcesso
 {
-    partial class Form1
+    partial class GeradorChaveDeAcesso
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -34,17 +34,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.dtpAno = new System.Windows.Forms.DateTimePicker();
             this.dtpMes = new System.Windows.Forms.DateTimePicker();
             this.mtbCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.cbModelo = new System.Windows.Forms.ComboBox();
+            this.cmbModelo = new System.Windows.Forms.ComboBox();
             this.txtserie = new System.Windows.Forms.TextBox();
             this.btnGerarChave = new System.Windows.Forms.Button();
             this.txtNum = new System.Windows.Forms.TextBox();
+            this.txtChaveAcesso = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +85,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(188, 43);
+            this.label5.Location = new System.Drawing.Point(198, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 4;
@@ -100,24 +99,6 @@
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Série";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 173);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Random";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 197);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Parchv";
             // 
             // label9
             // 
@@ -159,25 +140,25 @@
             // 
             // mtbCNPJ
             // 
-            this.mtbCNPJ.Location = new System.Drawing.Point(43, 36);
+            this.mtbCNPJ.Location = new System.Drawing.Point(49, 36);
             this.mtbCNPJ.Mask = "00.000.000/0000-00";
             this.mtbCNPJ.Name = "mtbCNPJ";
-            this.mtbCNPJ.Size = new System.Drawing.Size(129, 20);
+            this.mtbCNPJ.Size = new System.Drawing.Size(124, 20);
             this.mtbCNPJ.TabIndex = 12;
             // 
-            // cbModelo
+            // cmbModelo
             // 
-            this.cbModelo.FormattingEnabled = true;
-            this.cbModelo.Location = new System.Drawing.Point(236, 36);
-            this.cbModelo.Name = "cbModelo";
-            this.cbModelo.Size = new System.Drawing.Size(62, 21);
-            this.cbModelo.TabIndex = 13;
+            this.cmbModelo.FormattingEnabled = true;
+            this.cmbModelo.Location = new System.Drawing.Point(246, 36);
+            this.cmbModelo.Name = "cmbModelo";
+            this.cmbModelo.Size = new System.Drawing.Size(52, 21);
+            this.cmbModelo.TabIndex = 13;
             // 
             // txtserie
             // 
-            this.txtserie.Location = new System.Drawing.Point(43, 66);
+            this.txtserie.Location = new System.Drawing.Point(49, 66);
             this.txtserie.Name = "txtserie";
-            this.txtserie.Size = new System.Drawing.Size(66, 20);
+            this.txtserie.Size = new System.Drawing.Size(74, 20);
             this.txtserie.TabIndex = 14;
             // 
             // btnGerarChave
@@ -197,30 +178,37 @@
             this.txtNum.Size = new System.Drawing.Size(124, 20);
             this.txtNum.TabIndex = 16;
             // 
-            // Form1
+            // txtChaveAcesso
+            // 
+            this.txtChaveAcesso.Location = new System.Drawing.Point(9, 135);
+            this.txtChaveAcesso.Name = "txtChaveAcesso";
+            this.txtChaveAcesso.Size = new System.Drawing.Size(289, 20);
+            this.txtChaveAcesso.TabIndex = 17;
+            // 
+            // GeradorChaveDeAcesso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(310, 224);
+            this.Controls.Add(this.txtChaveAcesso);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.btnGerarChave);
             this.Controls.Add(this.txtserie);
-            this.Controls.Add(this.cbModelo);
+            this.Controls.Add(this.cmbModelo);
             this.Controls.Add(this.mtbCNPJ);
             this.Controls.Add(this.dtpMes);
             this.Controls.Add(this.dtpAno);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "GeradorChaveDeAcesso";
             this.Text = "Gerador de chave de acesso NF-e";
+            this.Load += new System.EventHandler(this.GeradorChaveDeAcesso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,17 +222,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.DateTimePicker dtpAno;
         private System.Windows.Forms.DateTimePicker dtpMes;
         private System.Windows.Forms.MaskedTextBox mtbCNPJ;
-        private System.Windows.Forms.ComboBox cbModelo;
+        private System.Windows.Forms.ComboBox cmbModelo;
         private System.Windows.Forms.TextBox txtserie;
         private System.Windows.Forms.Button btnGerarChave;
         private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.TextBox txtChaveAcesso;
     }
 }
 
