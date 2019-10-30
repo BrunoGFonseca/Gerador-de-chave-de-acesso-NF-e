@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 9);
+            this.label2.Location = new System.Drawing.Point(129, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 9);
+            this.label3.Location = new System.Drawing.Point(243, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 2;
@@ -88,7 +88,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(198, 43);
+            this.label5.Location = new System.Drawing.Point(228, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 4;
@@ -106,7 +106,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(129, 69);
+            this.label9.Location = new System.Drawing.Point(157, 69);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 8;
@@ -124,7 +124,7 @@
             // 
             this.dtpAno.CustomFormat = "yy";
             this.dtpAno.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpAno.Location = new System.Drawing.Point(147, 6);
+            this.dtpAno.Location = new System.Drawing.Point(166, 6);
             this.dtpAno.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dtpAno.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpAno.Name = "dtpAno";
@@ -136,7 +136,7 @@
             // 
             this.dtpMes.CustomFormat = "MM";
             this.dtpMes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMes.Location = new System.Drawing.Point(246, 6);
+            this.dtpMes.Location = new System.Drawing.Point(279, 3);
             this.dtpMes.Name = "dtpMes";
             this.dtpMes.Size = new System.Drawing.Size(52, 20);
             this.dtpMes.TabIndex = 11;
@@ -152,7 +152,7 @@
             // cmbModelo
             // 
             this.cmbModelo.FormattingEnabled = true;
-            this.cmbModelo.Location = new System.Drawing.Point(246, 36);
+            this.cmbModelo.Location = new System.Drawing.Point(279, 35);
             this.cmbModelo.Name = "cmbModelo";
             this.cmbModelo.Size = new System.Drawing.Size(52, 21);
             this.cmbModelo.TabIndex = 13;
@@ -166,7 +166,7 @@
             // 
             // btnGerarChave
             // 
-            this.btnGerarChave.Location = new System.Drawing.Point(12, 115);
+            this.btnGerarChave.Location = new System.Drawing.Point(12, 104);
             this.btnGerarChave.Name = "btnGerarChave";
             this.btnGerarChave.Size = new System.Drawing.Size(132, 23);
             this.btnGerarChave.TabIndex = 15;
@@ -176,22 +176,22 @@
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(174, 66);
+            this.txtNum.Location = new System.Drawing.Point(207, 62);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(124, 20);
             this.txtNum.TabIndex = 16;
             // 
             // txtChaveAcesso
             // 
-            this.txtChaveAcesso.Location = new System.Drawing.Point(12, 168);
+            this.txtChaveAcesso.Location = new System.Drawing.Point(12, 157);
             this.txtChaveAcesso.Name = "txtChaveAcesso";
-            this.txtChaveAcesso.Size = new System.Drawing.Size(286, 20);
+            this.txtChaveAcesso.Size = new System.Drawing.Size(319, 20);
             this.txtChaveAcesso.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(115, 152);
+            this.label7.Location = new System.Drawing.Point(129, 141);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 13);
             this.label7.TabIndex = 18;
@@ -199,7 +199,7 @@
             // 
             // btnLimp
             // 
-            this.btnLimp.Location = new System.Drawing.Point(166, 115);
+            this.btnLimp.Location = new System.Drawing.Point(199, 104);
             this.btnLimp.Name = "btnLimp";
             this.btnLimp.Size = new System.Drawing.Size(132, 23);
             this.btnLimp.TabIndex = 19;
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 196);
+            this.ClientSize = new System.Drawing.Size(343, 183);
             this.Controls.Add(this.btnLimp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtChaveAcesso);
