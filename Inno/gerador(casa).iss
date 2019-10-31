@@ -2,15 +2,15 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Gerador de Chave de Acesso"
-#define MyAppVersion "2.3"
-#define MyAppPublisher "My Company, Inc."
+#define MyAppVersion "3.00"
+#define MyAppPublisher "TotalDevs"
 #define MyAppURL "http://www.example.com/"
 #define MyAppExeName "GeradorChaveDeAcesso.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{20337CAE-69B4-4CA1-8C87-A3DC011563C4}
+AppId={{A20CAFB0-C4D4-44C8-9763-AFC6387E7222}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -19,11 +19,14 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName=C:\{#MyAppName}
+DisableDirPage=yes
 DisableProgramGroupPage=yes
+; The [Icons] "quicklaunchicon" entry uses {userappdata} but its [Tasks] entry has a proper IsAdminInstallMode Check.
+UsedUserAreasWarning=no
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputBaseFilename=Gerador de Chave de Acesso
-SetupIconFile=C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\chave.ico
+SetupIconFile=D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\chave.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -34,14 +37,16 @@ Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortugue
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 6.1; Check: not IsAdminInstallMode
 
 [Files]
-Source: "C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\GITs\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\bin\Debug\GeradorChaveDeAcesso.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: quicklaunchicon
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
