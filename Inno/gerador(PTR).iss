@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Gerador de Chave de Acesso"
-#define MyAppVersion "2.3"
+#define MyAppVersion "3.0"
 #define MyAppPublisher "TotalDevs"
 #define MyAppURL "http://www.example.com/"
 #define MyAppExeName "GeradorChaveDeAcesso.exe"
@@ -23,7 +23,7 @@ DisableProgramGroupPage=yes
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputBaseFilename=Gerador de Chave de Acesso
-SetupIconFile=C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\chave.ico
+SetupIconFile=C:\Users\bruno.fonseca\Desktop\Gerador-de-chave-de-acesso-NF-e\GeradorChaveDeAcesso\Sources\chave.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
