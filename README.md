@@ -1,5 +1,7 @@
 # Gerador-de-chave-de-acesso-NF-E
-![GitHub](https://img.shields.io/github/license/BrunoGFonseca/Gerador-de-chave-de-acesso-NF-e)
+![GitHub](https://img.shields.io/github/license/BrunoGFonseca/Gerador-de-chave-de-acesso-NF-e)<br/>
+![GitHub Repo stars](https://img.shields.io/github/stars/BrunoGFonseca/Gerador-de-chave-de-acesso-NF-e?style=social)
+![GitHub forks](https://img.shields.io/github/forks/BrunoGFonseca/Gerador-de-chave-de-acesso-NF-e?style=social)
 
 Este repositório contém um gerador de chaves de acesso para NF-e, para ser usado para testes em ambientes de homologação. Ideal para testes de aplicações que trabalhem com NF-e.
 
